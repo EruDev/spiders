@@ -61,7 +61,12 @@ class MeiZiTu(object):
         # print(img_path)
 
         if flag == '下一页':
-            self.img(next_url)
+            try:
+                self.img(next_url)
+            except:
+                print('休息10秒')
+                time.sleep(10)
+                self.img(url)
 
     def makedir(self, title):
 
