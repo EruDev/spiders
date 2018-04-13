@@ -23,3 +23,5 @@
 - [虎嗅网](https://github.com/EruDev/spiders/tree/master/huxiuwang)
 
 - [安居客](https://github.com/EruDev/spiders/tree/master/AnJuKe2)
+
+- [笔趣阁小说](https://github.com/EruDev/spiders/tree/master/BiQuGe)
