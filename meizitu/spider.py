@@ -2,6 +2,7 @@
 import os
 import time
 import requests
+import re
 from random import choice
 from lxml import html
 from requests.exceptions import RequestException
@@ -48,7 +49,7 @@ class MeiZiTu(object):
         img_name = el.xpath('//div[@class="main-image"]/p/a/img/@src')[0][-9:]   # 图片名
         flag = el.xpath('//div[@class="pagenavi"]/a[last()]/span/text()')[0].replace('»', '')  # 下一页
 
-        self.makedir(title)
+        self.makedir(self.strip(title))
 
         img_path = '%s/%s%s' % ('C:\MeiZiTu\\' + title, img_name, '.jpg')
 
@@ -84,6 +85,10 @@ class MeiZiTu(object):
             f.write(requests.get(img_src, headers=self.headers).content)
             print('正在下载图片, 链接为: ', img_src)
         print('该图下载完成')
+
+    def strip(self, path):
+        path = re.sub(r'[?\\*|"<>:/]', '', str(path))
+        return path
 
     def main(self):
         url = 'http://www.mzitu.com/all/'
