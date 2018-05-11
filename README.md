@@ -18,6 +18,8 @@
 
 - [妹子图](https://github.com/EruDev/spiders/blob/master/meizitu/spider.py)
 
+- [豆瓣影评](https://github.com/EruDev/spiders/blob/master/douban_yingping/douban.py)
+
 **二、 框架篇 (Scrapy)**
 
 - [虎嗅网](https://github.com/EruDev/spiders/tree/master/huxiuwang)
