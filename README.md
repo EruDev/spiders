@@ -20,6 +20,8 @@
 
 - [豆瓣影评](https://github.com/EruDev/spiders/blob/master/douban_yingping/douban.py)
 
+- [喜马拉雅精品榜](https://github.com/EruDev/spiders/tree/master/ximalaya)
+
 **二、 框架篇 (Scrapy)**
 
 - [虎嗅网](https://github.com/EruDev/spiders/tree/master/huxiuwang)
