@@ -29,3 +29,7 @@
 - [安居客](https://github.com/EruDev/spiders/tree/master/AnJuKe2)
 
 - [笔趣阁小说](https://github.com/EruDev/spiders/tree/master/BiQuGe)
+
+**三、 进阶篇**
+
+- [断点续爬存入 MySQL](https://github.com/EruDev/spiders/blob/master/hdbeemovie/hdbeemovie/spiders/hdbee.py)
